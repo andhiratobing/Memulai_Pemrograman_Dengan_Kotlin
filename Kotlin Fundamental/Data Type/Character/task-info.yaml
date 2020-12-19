@@ -1,0 +1,25 @@
+type: theory
+custom_name: Character
+files:
+- name: src/App.kt
+  visible: true
+  text: |-
+    // main function
+    fun main() {
+        var vocal = 'A'
+
+        println("Vocal " + vocal++)
+        println("Vocal " + vocal++)
+        println("Vocal " + vocal++)
+        println("Vocal " + vocal--)
+        println("Vocal " + vocal--)
+        println("Vocal " + vocal--)
+        println("Vocal " + vocal--)
+    }
+  learner_created: false
+status: Unchecked
+feedback:
+  message: Unable to execute task `Character`, main method is missing
+  time: Sat, 19 Dec 2020 18:44:16 UTC
+record: -1
+post_submission_on_open: true

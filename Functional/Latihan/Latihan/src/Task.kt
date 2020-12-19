@@ -1,0 +1,35 @@
+/**
+ * Untuk menyelesaikan tugas latihan, Anda tidak diperbolehkan mengubah struktur kode yang sudah ada. Kecuali:
+ *    - Untuk melakukan improvisasi kode
+ *    - Mengikuti perintah yang ada
+ *
+ * Cukup tambahkan kode berdasarkan perintah yang sudah ditentukan.
+ *
+ */
+
+// fungsi main
+fun main() {
+    val kotlin = "Kotlin".getFirstAndLast()
+    val dicoding = "Dicoding".getFirstAndLast()
+
+    val kotlinFirstChar = kotlin["first"]
+    val kotlinLastChar = kotlin["last"]
+
+    val dicodingFirstChar = dicoding["first"]
+    val dicodingLastChar = dicoding["last"]
+
+    println("First char Kotlin is $kotlinFirstChar and $kotlinLastChar for second letter")
+    println("First char Dicoding is $dicodingFirstChar and $dicodingLastChar for second letter")
+
+}
+
+// TODO\
+//fungsi extensions
+fun String.getFirstAndLast(): Map<String, Char>{
+
+    //mengembalikan nilai untuk memperoleh output index awal dan akhir
+    return mapOf(
+            "first" to this[0],
+            "last" to this[lastIndex]
+    )
+}
